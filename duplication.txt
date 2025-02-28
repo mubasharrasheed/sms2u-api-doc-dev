@@ -1,0 +1,24 @@
+[
+  {
+    "url": "http://localhost:3000/api/account/general/loginClear233",
+    "files": [
+      "_latest_collections/AccountGeneral.json",
+      "_latest_collections/AccountGeneral.json"
+    ],
+    "params": [
+      "Account - General - Login Email all nsns",
+      "Account - General - Login Email all nsns"
+    ]
+  },
+  {
+    "url": "http://localhost:3000/api/account/general/loginClear",
+    "files": [
+      "_latest_collections/AccountGeneral.json",
+      "_latest_collections/AccountGeneral.json"
+    ],
+    "params": [
+      "Account - General - Login Email yesssss",
+      "Account - General - Login Email Numan"
+    ]
+  }
+]

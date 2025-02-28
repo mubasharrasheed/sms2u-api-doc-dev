@@ -1,0 +1,30 @@
+apis:
+  sample@v1:
+    root: openapi/openapi.yaml
+extends:
+  - recommended
+rules:
+  no-unused-components: error
+  no-server-example.com: off
+  parameter-description: off
+  operation-operationId: off
+  operation-4xx-response: off
+  info-license: off
+theme:
+  openapi:
+    theme:
+      sidebar:
+        backgroundColor: "ivory"
+      rightPanel:
+        textColor: "ivory"
+        backgroundColor: "#001036"
+      typography:
+        links:
+          color: "#0090cc"
+    generateCodeSamples:
+      languages:
+        - lang: curl
+        - lang: Node.js
+        - lang: JavaScript
+        - lang: PHP
+        - lang: Python

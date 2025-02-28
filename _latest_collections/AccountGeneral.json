@@ -1,0 +1,168 @@
+{
+  "info": {
+    "_postman_id": "3236dfe4-bac7-45ac-b5dc-8e832920d79a",
+    "name": "SMS2U",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "35161986"
+  },
+  "item": [
+    {
+      "name": "webhook",
+      "protocolProfileBehavior": {
+        "disabledSystemHeaders": {}
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://dashboard.sms2u.io/api/webhook/SECRET_KEY/PHONE_NO",
+          "protocol": "https",
+          "host": [
+            "dashboard.sms2u.io"
+          ],
+          "path": [
+            "api",
+            "webhook",
+            "SECRET_KEY",
+            "PHONE_NO"
+          ]
+        },
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "BearerToken",
+              "type": "string"
+            }
+          ]
+        },
+        "description": "This endpoint is named `webhook` and it is designed to retrieve message data from `https://dashboard.sms2u.io/api/webhook/SECRET_KEY/PHONE_NO`, using a GET method. The URL requires two dynamic parameters, the `SECRET_KEY` and the `PHONE_NO` which should be replaced by the valid secret key and phone number respectively before making a request.\n\nNo specific headers are required in the request being sent to this endpoint; however, it requires authentication. It uses a 'bearer token' type of authentication for securing its endpoint. The key in this 'bearer' authentication is named 'token' and its corresponding value should be the valid 'BearerToken'.\n\nIn summary, this endpoint is basically used to retrieve messages associated with a specific phone number which is identified by the 'PHONE_NO' in the endpoint URL. Using the provided 'BearerToken' as an authentication parameter ensures the security and reliability of data retrieved from this endpoint. The data acquired can be used for several purposes, all dependent on the needs of developers or the application integrating this API."
+      },
+      "response": [
+        {
+          "name": "Success",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://dashboard.sms2u.io/api/webhook/SECRET_KEY/PHONE_NO",
+              "protocol": "https",
+              "host": [
+                "dashboard",
+                "sms2u",
+                "io"
+              ],
+              "path": [
+                "api",
+                "webhook",
+                "SECRET_KEY",
+                "PHONE_NO"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "Server",
+              "value": "nginx/1.18.0 (Ubuntu)"
+            },
+            {
+              "key": "Date",
+              "value": "Tue, 11 Feb 2025 10:37:12 GMT"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "974"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"3ce-Qxd+fADV3OPpGi2RuIWfFuedW+0\""
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"messages\": [\n        {\n            \"_id\": \"67ab1d3cf5d0746d07f0a301\",\n            \"body\": \"928511 is your Ticketmaster code.\",\n            \"from\": \"TKTMASTER\",\n            \"to\": \"PHONE_NO\",\n            \"dateReceived\": \"2025-02-11T09:49:48.039Z\"\n        },\n        {\n            \"_id\": \"67aa0a08076f92f8e0c40180\",\n            \"body\": \"218128 is your Ticketmaster code.\",\n            \"from\": \"TKTMASTER\",\n            \"to\": \"PHONE_NO\",\n            \"dateReceived\": \"2025-02-10T14:15:36.868Z\"\n        },\n        {\n            \"_id\": \"67a7570d06854264004e6482\",\n            \"body\": \"941840 is your Ticketmaster code.\",\n            \"from\": \"TKTMASTER\",\n            \"to\": \"PHONE_NO\",\n            \"dateReceived\": \"2025-02-08T13:07:25.447Z\"\n        },\n        {\n            \"_id\": \"67a754ed06854264004e6473\",\n            \"body\": \"941840 is your Ticketmaster code.\",\n            \"from\": \"TKTMASTER\",\n            \"to\": \"PHONE_NO\",\n            \"dateReceived\": \"2025-02-08T12:58:21.098Z\"\n        },\n        {\n            \"_id\": \"67a7536006854264004e6445\",\n            \"body\": \"411206 is your Ticketmaster code.\",\n            \"from\": \"TKTMASTER\",\n            \"to\": \"PHONE_NO\",\n            \"dateReceived\": \"2025-02-08T12:51:44.203Z\"\n        },\n        {\n            \"_id\": \"67a7523206854264004e642a\",\n            \"body\": \"411206 is your Ticketmaster code.\",\n            \"from\": \"TKTMASTER\",\n            \"to\": \"PHONE_NO\",\n            \"dateReceived\": \"2025-02-08T12:46:42.522Z\"\n        }\n    ]\n}"
+        },
+        {
+          "name": "Not Found",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://dashboard.sms2u.io/api/webhook/SECRET_KEY/PHONE_NO",
+              "protocol": "https",
+              "host": [
+                "dashboard",
+                "sms2u",
+                "io"
+              ],
+              "path": [
+                "api",
+                "webhook",
+                "SECRET_KEY",
+                "PHONE_NO"
+              ]
+            }
+          },
+          "status": "Not Found",
+          "code": 404,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "Server",
+              "value": "nginx/1.18.0 (Ubuntu)"
+            },
+            {
+              "key": "Date",
+              "value": "Tue, 11 Feb 2025 10:39:46 GMT"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "45"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"2d-hHv8Rbm/ij2cLl9JYZdm1h3pIXg\""
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"success\": false,\n    \"message\": \"User Not Found!\"\n}"
+        }
+      ]
+    }
+  ]
+}
